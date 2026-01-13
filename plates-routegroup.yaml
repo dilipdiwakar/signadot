@@ -1,0 +1,9 @@
+name: hotrod-plates-feature
+spec:
+  cluster: "ddcluster"
+  description: "route group for testing multiple sandboxes together"
+  match:
+    any:
+      - label:
+          key: feature
+          value: hotrod-plates
