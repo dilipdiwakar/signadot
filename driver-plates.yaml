@@ -1,0 +1,15 @@
+name: driver-plates
+spec:
+  description: Adding SD- prefix to driver plates
+  cluster: "ddcluster"
+  labels:
+    feature: hotrod-plates
+  forks:
+    - forkOf:
+        kind: Deployment
+        namespace: hotrod
+        name: driver
+      customizations:
+        images:
+          - image: signadot/hotrod:f788b05bca80429425b814da62b2f17c3c564089-linux-amd64
+            container: hotrod

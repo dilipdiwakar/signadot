@@ -1,0 +1,9 @@
+name: test-sandbox-routing
+spec:
+  description: Test Sandbox Routing
+  cluster: "stockborn@vqWT0uk9vy-Hz0NnuVQlu9PLp4dTfFd9a2s0_Ds4Y04"
+  forks:
+    - forkOf:
+        kind: Deployment
+        namespace: "signadot"
+        name: "Dilip"

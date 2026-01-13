@@ -1,0 +1,15 @@
+name: frontend-highlight
+spec:
+  description: Add plate number highlighting in UI
+  cluster: "ddcluster"
+  labels:
+    feature: hotrod-plates
+  forks:
+    - forkOf:
+        kind: Deployment
+        namespace: hotrod
+        name: frontend
+      customizations:
+        images:
+          - image: signadot/hotrod:97de62bf5a6d91482f62db23de565282ff97e60d-linux-amd64
+            container: hotrod
