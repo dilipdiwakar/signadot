@@ -25,9 +25,9 @@
 
 5. Install the HotROD Application: Install the demo app using the appropriate overlay
 
-      kubectl create ns hotrod --dry-run=client -o yaml | kubectl apply -f -
+      kubectl create ns hotrod --dry-run=client -o yaml | kubectl apply -f -                         // creates the namespace hotrod
    
-      kubectl -n hotrod apply -k 'https://github.com/signadot/hotrod/k8s/overlays/prod/istio'
+      kubectl -n hotrod apply -k 'https://github.com/signadot/hotrod/k8s/overlays/prod/istio'       // Deploys the HotROD application into the hotrod namespace
 
 
 7. Accessing the App's Frontend :
