@@ -105,31 +105,31 @@ Front End :
 ===========
 
 
-         <img width="637" height="716" alt="Screenshot 2026-01-12 at 8 19 13 PM" src="https://github.com/user-attachments/assets/b3d8a262-4afb-4ae6-ba1a-306d00145adb" />
+<img width="637" height="716" alt="Screenshot 2026-01-12 at 8 19 13 PM" src="https://github.com/user-attachments/assets/b3d8a262-4afb-4ae6-ba1a-306d00145adb" />
 
 
 
 Back End :
 ===========
 
-         <img width="551" height="714" alt="Screenshot 2026-01-12 at 8 31 29 PM" src="https://github.com/user-attachments/assets/f3a0ac1e-85d4-4b21-812b-b4ab8367c7c8" />
+<img width="551" height="714" alt="Screenshot 2026-01-12 at 8 31 29 PM" src="https://github.com/user-attachments/assets/f3a0ac1e-85d4-4b21-812b-b4ab8367c7c8" />
 
 
 SandBoxes :
 ===========
 
-       <img width="1706" height="324" alt="Screenshot 2026-01-12 at 9 28 19 PM" src="https://github.com/user-attachments/assets/7ba910ed-b419-4771-95f2-2a262af16c35" />
+<img width="1706" height="324" alt="Screenshot 2026-01-12 at 9 28 19 PM" src="https://github.com/user-attachments/assets/7ba910ed-b419-4771-95f2-2a262af16c35" />
 
 Url : http://frontend.hotrod.svc:8080/
 ======================================
 
-      <img width="1704" height="1009" alt="Screenshot 2026-01-12 at 8 35 01 PM" src="https://github.com/user-attachments/assets/953c6d34-a222-435d-baf3-2fe6e80bd7d4" />
+<img width="1704" height="1009" alt="Screenshot 2026-01-12 at 8 35 01 PM" src="https://github.com/user-attachments/assets/953c6d34-a222-435d-baf3-2fe6e80bd7d4" />
 
 
 
 
 
-      <img width="1681" height="970" alt="Screenshot 2026-01-12 at 8 43 19 PM" src="https://github.com/user-attachments/assets/a4f577c8-8887-4518-be68-f3a528b6b15e" />
+<img width="1681" height="970" alt="Screenshot 2026-01-12 at 8 43 19 PM" src="https://github.com/user-attachments/assets/a4f577c8-8887-4518-be68-f3a528b6b15e" />
 
 
 plates-routegroup.yaml
