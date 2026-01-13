@@ -95,8 +95,8 @@ Backend app :
 <img width="717" height="387" alt="Screenshot 2026-01-12 at 8 00 13 PM" src="https://github.com/user-attachments/assets/1aedfa43-1c63-4725-856a-9c12492d7c84" />
 
 
-9. signadot % kubectl -n hotrod patch deployment frontend \
-  -p '{"spec":{"template":{"metadata":{"annotations":{"sidecar.signadot.com/inject":"true"}}}}}'
+9. kubectl -n hotrod patch deployment frontend \
+  -p '{"spec":{"template":{"metadata":{"annotations":{"sidecar.signadot.com/inject":"true"}}}}}'          // Whenever you create a pod from this deployment, automatically attach the Signadot DevMesh sidecar.”
 
   
 
@@ -137,7 +137,7 @@ plates-routegroup.yaml
 
 name: hotrod-plates-feature
 spec:
-  cluster: "@{cluster}"
+  cluster: "ddcluster"
   description: "route group for testing multiple sandboxes together"
   match:
     any:
