@@ -14,11 +14,11 @@
 
 3. Run the following commands to install Signadot on the cluster you are connecting:
    
-      kubectl create ns signadot
+      kubectl create ns signadot       // create a namespace signadot in the Kubernetes cluster in baseline env
    
-      helm repo add signadot https://charts.signadot.com
+      helm repo add signadot https://charts.signadot.com      // Adds Signadot’s Helm chart repository to your local Helm configuration, Helm knows where to find Signadot packages.
 
-      helm install signadot-operator signadot/operator --set controlPlane.clusterToken='stockborn@vqWT0uk9vy-Hz0NnuVQlu9PLp4dTfFd9a2s0_Ds4Y04'
+      helm install signadot-operator signadot/operator --set controlPlane.clusterToken='stockborn@vqWT0uk9vy-Hz0NnuVQlu9PLp4dTfFd9a2s0_Ds4Y04' // it installs the signadot components
 
 
     
