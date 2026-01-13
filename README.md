@@ -101,6 +101,7 @@ Front End :
    <img width="637" height="716" alt="Screenshot 2026-01-12 at 8 19 13 PM" src="https://github.com/user-attachments/assets/b3d8a262-4afb-4ae6-ba1a-306d00145adb" />
 
 
+
 Back End :
 ===========
 
@@ -112,6 +113,11 @@ Url : http://frontend.hotrod.svc:8080/
 
 <img width="1704" height="1009" alt="Screenshot 2026-01-12 at 8 35 01 PM" src="https://github.com/user-attachments/assets/953c6d34-a222-435d-baf3-2fe6e80bd7d4" />
 
+
+
+
+
+<img width="1681" height="970" alt="Screenshot 2026-01-12 at 8 43 19 PM" src="https://github.com/user-attachments/assets/a4f577c8-8887-4518-be68-f3a528b6b15e" />
 
 
 Others :
