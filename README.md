@@ -48,6 +48,42 @@ local:
 
 8. Apply the Kubernetes YAML file frontend-highlight.yaml , driver-plates.yaml in Sandbox env
 
+Frontend app :
+
+name: frontend-highlight
+spec:
+  description: Add plate number highlighting in UI
+  cluster: "ddcluster"
+  labels:
+    feature: hotrod-plates
+  forks:
+    - forkOf:
+        kind: Deployment
+        namespace: hotrod
+        name: frontend
+      customizations:
+        images:
+          - image: signadot/hotrod:97de62bf5a6d91482f62db23de565282ff97e60d-linux-amd64
+            container: hotrod
+
+Backend app :
+
+name: driver-plates
+spec:
+  description: Adding SD- prefix to driver plates
+  cluster: "ddcluster"
+  labels:
+    feature: hotrod-plates
+  forks:
+    - forkOf:
+        kind: Deployment
+        namespace: hotrod
+        name: driver
+      customizations:
+        images:
+          - image: signadot/hotrod:f788b05bca80429425b814da62b2f17c3c564089-linux-amd64
+            container: hotrod
+
 
 
 Others :
