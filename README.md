@@ -66,6 +66,9 @@ spec:
           - image: signadot/hotrod:97de62bf5a6d91482f62db23de565282ff97e60d-linux-amd64
             container: hotrod
 
+<img width="738" height="474" alt="Screenshot 2026-01-12 at 7 59 34 PM" src="https://github.com/user-attachments/assets/21c72bda-a7ef-49de-9266-f0fb758ec6b0" />
+
+
 Backend app :
 
 name: driver-plates
@@ -83,6 +86,9 @@ spec:
         images:
           - image: signadot/hotrod:f788b05bca80429425b814da62b2f17c3c564089-linux-amd64
             container: hotrod
+
+
+<img width="717" height="387" alt="Screenshot 2026-01-12 at 8 00 13 PM" src="https://github.com/user-attachments/assets/1aedfa43-1c63-4725-856a-9c12492d7c84" />
 
 
 
