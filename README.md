@@ -135,19 +135,20 @@ Url : http://frontend.hotrod.svc:8080/
 plates-routegroup.yaml
 ========================
 
-name: hotrod-plates-feature
-spec:
-  cluster: "ddcluster"
-  description: "route group for testing multiple sandboxes together"
-  match:
-    any:
-    - label:
-        key: feature
-        value: hotrod-plates
+      name: hotrod-plates-feature
+      spec:
+        cluster: "ddcluster"
+        description: "route group for testing multiple sandboxes together"
+        match:
+          any:
+          - label:
+              key: feature
+              value: hotrod-plates
 
 
 Save the route group spec as plates-routegroup.yaml and apply it:
-       signadot routegroup apply -f ./plates-routegroup.yaml --set cluster=ddcluster
+                   
+      signadot routegroup apply -f ./plates-routegroup.yaml --set cluster=ddcluster
 
 
  
