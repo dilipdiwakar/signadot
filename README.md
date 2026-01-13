@@ -13,6 +13,7 @@
 
 
 3. Run the following commands to install Signadot on the cluster you are connecting:
+   
       kubectl create ns signadot
    
       helm repo add signadot https://charts.signadot.com
