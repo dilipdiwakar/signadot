@@ -14,24 +14,27 @@
 
 3. Run the following commands to install Signadot on the cluster you are connecting:
       kubectl create ns signadot
+   
       helm repo add signadot https://charts.signadot.com
+
       helm install signadot-operator signadot/operator --set controlPlane.clusterToken='stockborn@vqWT0uk9vy-Hz0NnuVQlu9PLp4dTfFd9a2s0_Ds4Y04'
 
 
     
 
-4. Install the HotROD Application: Install the demo app using the appropriate overlay
+5. Install the HotROD Application: Install the demo app using the appropriate overlay
 
       kubectl create ns hotrod --dry-run=client -o yaml | kubectl apply -f -
+   
       kubectl -n hotrod apply -k 'https://github.com/signadot/hotrod/k8s/overlays/prod/istio'
 
 
-5. Accessing the App's Frontend :
+7. Accessing the App's Frontend :
       First, authenticate with your Signadot account using the CLI:
 
            signadot auth login
 
-6. Once authentication is completed, you can connect to your cluster as shown below:
+8. Once authentication is completed, you can connect to your cluster as shown below:
 
     Create a config.yaml file
 
@@ -42,11 +45,11 @@ local:
       type: ControlPlaneProxy
 
 
-7. Connect to the cluster:
+9. Connect to the cluster:
 
     signadot local connect
 
-8. Apply the Kubernetes YAML file frontend-highlight.yaml , driver-plates.yaml in Sandbox env
+10. Apply the Kubernetes YAML file frontend-highlight.yaml , driver-plates.yaml in Sandbox env
 
 Frontend app :
 
