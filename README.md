@@ -96,6 +96,7 @@ spec:
 
    <img width="637" height="716" alt="Screenshot 2026-01-12 at 8 19 13 PM" src="https://github.com/user-attachments/assets/b3d8a262-4afb-4ae6-ba1a-306d00145adb" />
 
+   <img width="637" height="716" alt="Screenshot 2026-01-12 at 8 19 13 PM" src="https://github.com/user-attachments/assets/059a977b-8433-408e-b640-42769069148b" />
 
 Others :
 
