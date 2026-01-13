@@ -94,7 +94,7 @@ spec:
 9. signadot % kubectl -n hotrod patch deployment frontend \
   -p '{"spec":{"template":{"metadata":{"annotations":{"sidecar.signadot.com/inject":"true"}}}}}'
 
-   <img width="1706" height="324" alt="Screenshot 2026-01-12 at 9 28 19 PM" src="https://github.com/user-attachments/assets/7ba910ed-b419-4771-95f2-2a262af16c35" />
+  
 
 
 Front End :
@@ -110,6 +110,11 @@ Back End :
 
    <img width="551" height="714" alt="Screenshot 2026-01-12 at 8 31 29 PM" src="https://github.com/user-attachments/assets/f3a0ac1e-85d4-4b21-812b-b4ab8367c7c8" />
 
+
+SandBoxes :
+===========
+
+ <img width="1706" height="324" alt="Screenshot 2026-01-12 at 9 28 19 PM" src="https://github.com/user-attachments/assets/7ba910ed-b419-4771-95f2-2a262af16c35" />
 
 Url : http://frontend.hotrod.svc:8080/
 ======================================
