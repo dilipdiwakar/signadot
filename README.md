@@ -94,7 +94,8 @@ spec:
 9. signadot % kubectl -n hotrod patch deployment frontend \
   -p '{"spec":{"template":{"metadata":{"annotations":{"sidecar.signadot.com/inject":"true"}}}}}'
 
-   
+   <img width="637" height="716" alt="Screenshot 2026-01-12 at 8 19 13 PM" src="https://github.com/user-attachments/assets/b3d8a262-4afb-4ae6-ba1a-306d00145adb" />
+
 
 Others :
 
