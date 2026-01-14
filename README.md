@@ -3,31 +3,36 @@
       navigate to Clusters > Connect Cluster, and then supply a name that identifies the cluster you are connecting.
       https://app.signadot.com/cluster/ddcluster
 
-2. Connecting Your Cluster :
+         Connecting Your Cluster :
 
-      A cluster token has been created for you. Be sure to save it as you will not be able to view it again if you leave or refresh this page.
+            A cluster token has been created for you. Be sure to save it as you will not be able to view it again if you leave or refresh this page.
     
-         stockborn@vqWT0uk9vy-Hz0NnuVQlu9PLp4dTfFd9a2s0_Ds4Y04
+                     stockborn@vqWT0uk9vy-Hz0NnuVQlu9PLp4dTfFd9a2s0_Ds4Y04
 
 
 
 
-3. Run the following commands to install Signadot on the cluster you are connecting:
+2. Run the following commands to install Signadot on the cluster you are connecting:
    
-            kubectl create ns signadot       // create a namespace signadot in the Kubernetes cluster in baseline env
+            kubectl create ns signadot
+                     // create a namespace signadot in the Kubernetes cluster in baseline env
    
-            helm repo add signadot https://charts.signadot.com      // Adds Signadot’s Helm chart repository to your local Helm configuration, Helm knows where to find Signadot packages.
+            helm repo add signadot https://charts.signadot.com      /
+                     / Adds Signadot’s Helm chart repository to your local Helm configuration, Helm knows where to find Signadot packages.
 
-            helm install signadot-operator signadot/operator --set controlPlane.clusterToken='stockborn@vqWT0uk9vy-Hz0NnuVQlu9PLp4dTfFd9a2s0_Ds4Y04' // it installs the signadot components
+            helm install signadot-operator signadot/operator --set controlPlane.clusterToken='stockborn@vqWT0uk9vy-Hz0NnuVQlu9PLp4dTfFd9a2s0_Ds4Y04'
+                     // it installs the signadot components
 
 
     
 
 5. Install the HotROD Application: Install the demo app using the appropriate overlay
 
-            kubectl create ns hotrod --dry-run=client -o yaml | kubectl apply -f -                         // creates the namespace hotrod
+            kubectl create ns hotrod --dry-run=client -o yaml | kubectl apply -f -
+                     // creates the namespace hotrod
    
-            kubectl -n hotrod apply -k 'https://github.com/signadot/hotrod/k8s/overlays/prod/istio'       // Deploys the HotROD application into the hotrod namespace
+            kubectl -n hotrod apply -k 'https://github.com/signadot/hotrod/k8s/overlays/prod/istio'       /
+                     / Deploys the HotROD application into the hotrod namespace
 
 
 7. Accessing the App's Frontend :
@@ -96,7 +101,9 @@ Backend app :
 
 
 9. kubectl -n hotrod patch deployment frontend \
-  -p '{"spec":{"template":{"metadata":{"annotations":{"sidecar.signadot.com/inject":"true"}}}}}'          // Whenever you create a pod from this deployment, automatically attach the Signadot DevMesh sidecar.”
+  -p '{"spec":{"template":{"metadata":{"annotations":{"sidecar.signadot.com/inject":"true"}}}}}'
+
+         // Whenever you create a pod from this deployment, automatically attach the Signadot DevMesh sidecar.”
 
   
 
