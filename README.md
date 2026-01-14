@@ -122,6 +122,7 @@ SandBoxes :
 
 Url : http://frontend.hotrod.svc:8080/
 ======================================
+kubectl -n hotrod port-forward svc/frontend 8080:8080
 
 <img width="1704" height="1009" alt="Screenshot 2026-01-12 at 8 35 01 PM" src="https://github.com/user-attachments/assets/953c6d34-a222-435d-baf3-2fe6e80bd7d4" />
 
