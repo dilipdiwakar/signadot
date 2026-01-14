@@ -26,7 +26,7 @@
 
     
 
-5. Install the HotROD Application: Install the demo app using the appropriate overlay
+5. Deploy the HotROD Application in the Baseline Environment
 
             kubectl create ns hotrod --dry-run=client -o yaml | kubectl apply -f -
                      // creates the namespace hotrod
@@ -159,9 +159,31 @@ Save the route group spec as plates-routegroup.yaml and apply it:
       signadot routegroup apply -f ./plates-routegroup.yaml --set cluster=ddcluster
 
 
+10. **Write a Signadot Smart Test**
+          Create route_test.js:
+          ===================
+          res = http.get(
+              url="http://frontend.hotrod.svc:8080/api/route",
+              headers={
+                "x-signadot-test": "true"
+              },
+              capture=true,   // enables SmartDiff
+              name="RouteAPI"
+            )
+            
+            print(res.status_code)
+            print(res.body())
+
+
+11. **Run the Smart Test**
+
+    signadot smart-test run --sandbox route-test --test-file route_test.js
+
+
+ 
  
 Others :
-
+======
 Upgrading the Operator:
 You upgrade an existing installation by running the following Helm commands.
 
