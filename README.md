@@ -169,8 +169,10 @@ Save the route group spec as plates-routegroup.yaml and apply it:
 
 
 10. **Write a Signadot Smart Test**
+    
           Create route_test.js:
-          ===================
+          =====================
+    
           res = http.get(
               url="http://frontend.hotrod.svc:8080/api/route",
               headers={
@@ -184,9 +186,9 @@ Save the route group spec as plates-routegroup.yaml and apply it:
             print(res.body())
 
 
-11. **Run the Smart Test**
+12. **Run the Smart Test**
 
-    signadot smart-test run --sandbox route-test --test-file route_test.js
+          signadot smart-test run --sandbox route-test --test-file route_test.js
 
 
  
