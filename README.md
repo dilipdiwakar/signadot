@@ -14,9 +14,13 @@
 
 2. Run the following commands to install Signadot on the cluster you are connecting:
 
+            Fresh Install or Cleanup
+            ========================   
             minikube stop
             minikube delete
             minikube start --driver=docker
+            helm uninstall signadot-operator -n default
+
 
             kubectl create ns signadot
                      // create a namespace signadot in the Kubernetes cluster in baseline env
