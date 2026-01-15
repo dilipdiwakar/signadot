@@ -1,0 +1,5 @@
+$HOME/.signadot/config.yaml:
+local:
+ connections:
+   - cluster: ddcluster
+     type: ControlPlaneProxy
