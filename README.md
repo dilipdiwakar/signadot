@@ -30,7 +30,7 @@
                      // Adds Signadot’s Helm chart repository to your local Helm configuration, Helm knows where to find Signadot packages.
 
             helm install signadot-operator signadot/operator --set controlPlane.clusterToken='stockborn@r4foQVwEecZNVBHT-YSA93cTBlsPRW1_pNfRFsb3fpo'
-                     // it installs the signadot components
+                      // it installs the signadot components
 
 
     
