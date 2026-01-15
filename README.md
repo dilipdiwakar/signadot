@@ -7,7 +7,7 @@
 
             A cluster token has been created for you. Be sure to save it as you will not be able to view it again if you leave or refresh this page.
     
-                     stockborn@vqWT0uk9vy-Hz0NnuVQlu9PLp4dTfFd9a2s0_Ds4Y04
+                     stockborn@r4foQVwEecZNVBHT-YSA93cTBlsPRW1_pNfRFsb3fpo
 
 
 
@@ -20,7 +20,7 @@
             helm repo add signadot https://charts.signadot.com      /
                      / Adds Signadot’s Helm chart repository to your local Helm configuration, Helm knows where to find Signadot packages.
 
-            helm install signadot-operator signadot/operator --set controlPlane.clusterToken='stockborn@vqWT0uk9vy-Hz0NnuVQlu9PLp4dTfFd9a2s0_Ds4Y04'
+            helm install signadot-operator signadot/operator --set controlPlane.clusterToken='stockborn@r4foQVwEecZNVBHT-YSA93cTBlsPRW1_pNfRFsb3fpo'
                      // it installs the signadot components
 
 
