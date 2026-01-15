@@ -20,6 +20,7 @@
             minikube delete
             minikube start --driver=docker
             helm uninstall signadot-operator -n default
+            kubectl delete ns signadot
 
 
             kubectl create ns signadot
