@@ -13,7 +13,11 @@
 
 
 2. Run the following commands to install Signadot on the cluster you are connecting:
-   
+
+            minikube stop
+            minikube delete
+            minikube start --driver=docker
+
             kubectl create ns signadot
                      // create a namespace signadot in the Kubernetes cluster in baseline env
    
