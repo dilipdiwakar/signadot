@@ -24,14 +24,13 @@
 
 
             kubectl create ns signadot
-                     // create a namespace signadot in the Kubernetes cluster in baseline env
+               // create a namespace signadot in the Kubernetes cluster in baseline env
    
             helm repo add signadot https://charts.signadot.com
-                     // Adds Signadot’s Helm chart repository to your local Helm configuration, Helm knows where to find Signadot packages.
+               // Adds Signadot’s Helm chart repository to your local Helm configuration, Helm knows where to find Signadot packages.
 
             helm install signadot-operator signadot/operator --set controlPlane.clusterToken='stockborn@r4foQVwEecZNVBHT-YSA93cTBlsPRW1_pNfRFsb3fpo'
-                      // it installs the signadot components
-
+               // it installs the signadot components
 
     
 
