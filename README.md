@@ -64,7 +64,7 @@
 
     Create SANDBOX ENV 
 
-            <img width="630" height="447" alt="Screenshot 2026-01-14 at 9 17 19 PM" src="https://github.com/user-attachments/assets/26ae83f4-4411-4298-a985-b9efe7b50f20" />
+    <img width="630" height="447" alt="Screenshot 2026-01-14 at 9 17 19 PM" src="https://github.com/user-attachments/assets/26ae83f4-4411-4298-a985-b9efe7b50f20" />
 
 Frontend app :
 
